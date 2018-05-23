@@ -1,0 +1,8 @@
+apps:
+  # API
+  - script: server.js
+    name: thanhnamdiaoc-web
+    env:
+      NODE_ENV: production
+      PORT: 6004
+      ENABLE_CACHE: true

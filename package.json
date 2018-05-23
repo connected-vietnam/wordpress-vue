@@ -1,0 +1,66 @@
+{
+  "name": "wordpress-vue",
+  "version": "0.1.0",
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/router": "^1.0.1",
+    "date-fns": "^1.29.0",
+    "dotenv": "^5.0.1",
+    "element-ui": "^2.3.9",
+    "ellipsize": "^0.1.0",
+    "express": "^4.16.3",
+    "interpolate": "^0.1.0",
+    "numeral": "^2.0.6",
+    "nuxt": "latest",
+    "tachyons": "^4.9.1",
+    "uuid": "^3.2.1",
+    "vue": "^2.5.16",
+    "vue-flickity": "^1.1.2",
+    "vue-gallery": "^1.3.2",
+    "vue-i18n": "^7.6.0",
+    "vue-prevent-parent-scroll": "^1.0.5",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "lint": "eslint --ext .js,.vue .",
+    "lintfix": "eslint --fix --ext .js,.vue .",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "NODE_ENV=production node server.js",
+    "precommit": "lint-staged",
+    "test": "jest",
+    "flow-typed": "flow-typed install",
+    "deploy": "zip -FSr nuxt.zip .nuxt && scp nuxt.zip root@kdata-03:/var/www/thanhnamdiaoc-web"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.0-beta.11",
+    "@vue/eslint-config-airbnb": "^3.0.0-beta.9",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-vue-app": "^2.0.0",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "flow-bin": "^0.71.0",
+    "flow-typed": "^2.4.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.5",
+    "pug": "^2.0.3",
+    "webpack-bundle-analyzer": "^2.11.1"
+  }
+}

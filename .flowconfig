@@ -1,0 +1,17 @@
+[ignore]
+.*/node_modules/fbjs/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.vue
+module.file_ext=.js
+module.file_ext=.gql
+
+module.name_mapper='~' -> '<PROJECT_ROOT>'
+
+[strict]
